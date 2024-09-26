@@ -26,8 +26,8 @@ int main (){
     FILE *ar;
     ar =fopen("teste.txt","a+");
     fputs(palavra,ar);
-
     fseek(ar,0,SEEK_END);
+    
     fputs(label_nome,ar);
 
     printf("o arquivo esta no endereço:%p\n",ar);
